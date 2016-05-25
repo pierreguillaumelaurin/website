@@ -1,0 +1,15 @@
+{
+  "name": "portfolio_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pierre-Guillaume Laurin",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.12.8",
+    "gulp": "^3.9.1"
+  }
+}
