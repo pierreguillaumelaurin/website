@@ -1,0 +1,99 @@
+/* importing custom fonts */
+@font-face {
+	font-family: 'Aileron';
+	src: url('fonts/webfontkit/aileron-bold-webfont.woff2') format('woff2'),
+	     url('fonts/webfontkit/aileron-bold-webfont.woff') format('woff');
+}
+
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+@import url(https://fonts.googleapis.com/css?family=Molengo);
+/*beginning of stylesheets*/
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background-color: rgb(0, 101, 255);
+	color: #fff;
+	height: 100%;
+	width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Molengo', sans-serif, "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 36px;
+	font-weight: 900;
+	letter-spacing: 1px;
+}
+
+p  {
+
+  font-family: 'Molengo', sans-serif, "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+header {
+	border: 2px solid cyan;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: center;
+	-webkit-justify-content: center;
+	-webkit-flex-direction: column;
+	height: 100%;
+}
+
+.content-section {
+	align-items: center;
+	-webkit-align-items: center;
+	border: 2px solid cyan;
+	display: flex;
+	display: -webkit-flex;
+	height: 100%;
+}
+
+#sky {
+	border-bottom: 2px solid red;
+	height: 30%;
+	width: 100%;
+}
+
+#mountains {
+	display: flex;
+	display: -webkit-flex;
+
+	height: 70%;
+	width: 100%;
+}
+
+.flex-tier {
+	border: 2px solid red;
+	width: 21%;
+}
+
+.flex-last {
+  flex: auto;
+}
+
+.line1 {
+	border-bottom: 1px solid red;
+	height: 47px;
+	width: 212px;
+  transform: 
+      translateY(-20px)
+      translateX(5px)
+      rotate(27deg);
+  -webkit-transform:
+      translateY(-20px)
+      translateX(5px)
+      rotate(27deg); 
+  position: absolute;
+}
