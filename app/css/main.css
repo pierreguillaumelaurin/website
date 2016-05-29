@@ -7,13 +7,13 @@
 */
 
 @import url(https://fonts.googleapis.com/css?family=Arvo:700);
-@import url(https://fonts.googleapis.com/css?family=Molengo);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,900);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:700,400);
 /*beginning of stylesheets*/
 
 * {
 	box-sizing: border-box;
-	margin-left: -2%;
-	margin-right: 0%;
+	
 }
 html {
   background: 
@@ -34,18 +34,25 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Arvo', 'Molengo', sans-serif, "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: 'Lato', 'Molengo', sans-serif, "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 36px;
 	font-weight: 900;
-	letter-spacing: 1px;
-	padding-left: 10%;
+  margin-bottom: 0;
+	
 	text-transform: uppercase;
 }
 
 p  {
 
-  font-family: 'Arvo', sans-serif, "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 18px;
+  font-family: 'Lato', sans-serif, "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 36px;
+  letter-spacing: 1px;
+ 
+  margin-top: 1%;
+  text-transform: uppercase;
+}
+
+.bold-font {
   font-weight: 900;
 }
 
@@ -64,13 +71,16 @@ header {
 
 #name {
   align-items: center;
+  display: flex;
+  flex-direction: column;
   webkit-align-items: center;
   flex-direction: column;
   display: flex;
   justify-content: center;
   position: absolute;
-  left: 0;
+  left: 22%;
   top: 0;
+  z-index: 1;
 }
 
 .name-content {
@@ -87,13 +97,22 @@ header {
   z-index: -1;
 }
 .right-element {
-margin-bottom: 50%;
+margin-bottom: 40%;
 }
 
 
+@media screen and (min-width: 768px) {
+  #name {
+    top: 5%;
+  }
+}
 
+@media screen and (max-width: 765px) {
 
-@media screen and (max-width: 773px) {
+  html {
+    background: 
+    url("/img/portfolio-2.png") no-repeat center top scroll rgb(0,101,255);
+  }
 
   header {
     align-items: center;
@@ -110,6 +129,7 @@ margin-bottom: 50%;
     margin-top: 20%;
   }
   .middle-element {
+    margin-bottom: 30%;
     margin-right: 70%;
   }
 
@@ -117,19 +137,7 @@ margin-bottom: 50%;
     display: none;
     visibility: hidden;
   }
-  /*
-  .middle-element {
-  margin-bottom: 120%;
-  margin-left: 25%;
-  z-index: -1;
-  }
-
-  .right-element {
-    clear: both;
-    display: none;
-    visibility: hidden;
-  }
-  */
+ 
 }
 
 
