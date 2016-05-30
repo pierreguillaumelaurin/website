@@ -10,9 +10,14 @@
 
     
 
+    <!-- custom fonts -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    
+
   	</head>
   <body>
-  	<header class="flex-column">
+  	<header>
         
     		<div class="left-element icon">
 
@@ -21,11 +26,11 @@
 
         </div>
 
-        <div class="middle-element icon">
-            
-            <div class="cloud"></div>
-            <div class="cloud"></div>
-          
+        
+
+        <div id="name">
+          <h1> Pierre-Guillaume Laurin </h1>
+          <p>Front-End Developer</p>
         </div>
 
         <div class="right-element icon">
@@ -38,26 +43,48 @@
       
   	</header>
 
-    <div id="name">
-      <h2> Pierre-Guillaume Laurin </h2>
-      <p>Front-End Developer</p>
-    </div>
     
-  	<section id="build" class="content-section">
-  		<p>I build <span class="bold-font">websites</span></p>
-  	</section>
-  </div>
+    
+  	<section id="build" class="content-section flex-column">
 
-  	<section id="write" class="content-section">
-  		<p>I write in <span class="bold-font">HTML, CSS, Javascript, JQuery, Ruby</span></p>
-      <p> and sometimes in <span class="bold-font">Python</span> and <span class="bold-font">Ruby On Rails </span> </p>
+  		<p>I build <span class="bold-font">websites.</span></p>
+      <div class="flex-row">
+      <a href="https://github.com/reseauxsociauxlesdieux?tab=repositories" target="_blank"><button class="btn btn-default btn-position"><i class="fa fa-github"></i> GitHub</button></a>
+      </div>
+
   	</section>
-  	<section id="other" class="content-section">
-  		<p>I also write on <span class="bold-font"> marketing </span></p>
+
+  	<section id="write" class="content-section flex-column">
+  		<p>I write in <span class="bold-font">HTML, CSS, Javascript, JQuery, Ruby</span>.</p>
+      <p> and sometimes in <span class="bold-font">Python</span> and <span class="bold-font">Ruby On Rails.</span></p>
   	</section>
+
+  	<section id="other" class="content-section flex-column">
+  		<p>I also write on <span class="bold-font"> marketing.</span></p>
+      <div class="flex-row">
+      <a href="https://medium.com/@pierreguillaumelaurin/uber-must-change-its-narrative-in-quebec-a5f1ca7a6c1b#.jx1lo3xxj"><button class="btn btn-default btn-position"><i class="fa fa-medium"></i> Medium</button></a>
+      </div>
+  	</section>
+
+    <section id="mba" class="content-section flex-column">
+      <p><span class="bold-font"> Warning: </span>I have an MBA!</p>
+      <p> For more on my previous life: </p>
+      <div class="flex-row">
+      <a href="https://ca.linkedin.com/in/pierre-guillaume-laurin-34b45a5b" target="_blank"><button class="btn btn-default btn-position"><i class="fa fa-linkedin"></i> LinkedIN</button></a>
+      </div>
+    </section>
   	
-  	<section id="contact" class="content-section">
+  	<section id="contact" class="content-section flex-column">
   		<h2>I want to help!</h2>
+      <div class="flex-row">
+      <a href='mailto:pierreguillaumelaurin@gmail.com'><i class="fa fa-4x fa-envelope icon-margins cd i-white btn-position"></i></a>
+      </div>
   	</section>
+    
+    <!--JQuery-->
+    <script src="js/jquery.js"></script>
+
+    <!--Script-->
+    <script src="js/script.js"></script>
   </body>
 </html>

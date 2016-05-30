@@ -17,7 +17,7 @@
 }
 html {
   background: 
-    url("/img/portfolio-2.png") no-repeat left top scroll rgb(0,101,255);
+    url("/img/portfolio-4.png") no-repeat left top scroll rgb(0,101,255);
 	height: 100%;
 	width: 100%;
 }
@@ -28,6 +28,8 @@ body {
 	width: 100%;
 }
 
+
+
 h1,
 h2,
 h3,
@@ -35,7 +37,7 @@ h4,
 h5,
 h6 {
 	font-family: 'Lato', 'Molengo', sans-serif, "Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size: 36px;
+	font-size: 60px;
 	font-weight: 900;
   margin-bottom: 0;
 	
@@ -45,12 +47,18 @@ h6 {
 p  {
 
   font-family: 'Lato', sans-serif, "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 36px;
+  font-size: 60px;
   letter-spacing: 1px;
- 
+
   margin-top: 1%;
   text-transform: uppercase;
 }
+
+a:hover,
+a:focus {
+  color: #0dd;
+}
+
 
 .bold-font {
   font-weight: 900;
@@ -65,21 +73,24 @@ header {
 	flex-flow: row nowrap;
 	-webkit-flex-flow: row nowrap;
 	justify-content: space-between;
-	-webkit-justify-content: center;
+	-webkit-justify-content: space-between;
 	height: 100%;
 }
 
+
 #name {
   align-items: center;
+  webkit-align-items: center;
   display: flex;
   flex-direction: column;
   webkit-align-items: center;
   flex-direction: column;
   display: flex;
   justify-content: center;
-  position: absolute;
-  left: 22%;
-  top: 0;
+  webkit-justify-content: center;
+  width: 120%;
+  
+  
   z-index: 1;
 }
 
@@ -88,50 +99,54 @@ header {
 }
 
 .left-element {
-  margin-left: 3%;
+  margin-top: 30%;
 }
 
-.middle-element {
-  margin-bottom: 30%;
-  margin-left: 25%;
-  z-index: -1;
-}
+
 .right-element {
-margin-bottom: 40%;
+
+margin-right: 10%;
 }
 
 
-@media screen and (min-width: 768px) {
-  #name {
-    top: 5%;
-  }
-}
+
 
 @media screen and (max-width: 765px) {
 
   html {
-    background: 
-    url("/img/portfolio-2.png") no-repeat center top scroll rgb(0,101,255);
+    background-size: cover;
   }
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+  font-family: 'Lato', 'Molengo', sans-serif, "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 0;
+  
+  text-transform: uppercase;
+}
+
   header {
-    align-items: center;
-    -webkit-align-items: center;
+
     display: flex;
     display: -webkit-flex;
     flex-flow: column nowrap;
     overflow: hidden;
-    -webkit-flex-flow: column nowrap;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
   }
   
   .left-element {
     margin-left: 90%;
-    margin-top: 20%;
+    margin-top: 30%;
   }
-  .middle-element {
-    margin-bottom: 30%;
-    margin-right: 70%;
-  }
+  
 
   .right-element {
     display: none;
@@ -143,29 +158,72 @@ margin-bottom: 40%;
 
 
 .content-section {
-	border: 2px solid cyan;
-	display: flex;
-	display: -webkit-flex;
-	flex-direction: column;
-	justify-content: center;
-	-webkit-justify-content: center;
+	
+  padding-left: 10%;
 	height: 100%;
 }
 
-
-
-#sky {
-	border-bottom: 2px solid red;
-	height: 30%;
-	width: 100%;
+.flex-column {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-justify-content: center;
 }
 
-#mountains {
-	display: flex;
-	display: -webkit-flex;
+.flex-row {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+}
 
-	height: 70%;
-	width: 100%;
+
+.btn {
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: 'Lato',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-default {
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: transparent;
+
+}
+
+.btn-position {
+  margin-right: 50%;
+  margin-top: 10%;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid #fff;
+    outline: 0;
+    color: rgb(0, 101, 255);
+    background-color: #fff;
+}
+
+.reverse-bg-color {
+  background-color: #fff;
+  color: rgb(0, 101, 255);
+}
+
+
+.icon-margins {
+  margin-top: 5%;
+  
+}
+
+.i-white {
+  color: #fff;
 }
 
 /*cloud icons*/
@@ -218,6 +276,7 @@ margin-bottom: 40%;
 .cloud:nth-child(2):after {
   background: #fff;
 }
+
 
 /* cloud animation icons */
 
