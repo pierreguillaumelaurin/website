@@ -212,8 +212,8 @@ margin-right: 10%;
   display: flex;
   display: -webkit-flex;
   flex-direction: row;
-  justify-content: flex-end;
-  -webkit-justify-content: flex-end;
+  justify-content: center;
+  -webkit-justify-content: center;
 }
 
 @media (min-width: 701px) {
