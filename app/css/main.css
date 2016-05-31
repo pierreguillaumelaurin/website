@@ -208,6 +208,7 @@ margin-right: 10%;
   -webkit-justify-content: center;
 }
 
+
 .flex-row {
   display: flex;
   display: -webkit-flex;
@@ -304,6 +305,10 @@ margin-right: 10%;
 .icon-margins {
   margin-top: 5%;
   
+}
+
+.initially-hidden {
+    display: none;
 }
 
 .i-white {

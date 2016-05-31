@@ -35,6 +35,3 @@ function flash () {
   $('.btn').toggleClass('reverse-bg-color');
 }
 
-
-
-
