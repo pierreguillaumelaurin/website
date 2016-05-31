@@ -20,7 +20,12 @@ $(window).scroll(function(){
     else {
         console.log('a');
         clearInterval(flashInterval);
-        removeReverseBgColor;
+        if($('#mba').hasClass('reverse-bg-color')) {
+          $('#mba').removeClass('reverse-bg-color');
+        }
+        if($('.btn').removeClass('reverse-bg-color')) {
+          $('.btn').removeClass('reverse-bg-color');
+        }
         
     }
 });
@@ -30,14 +35,6 @@ function flash () {
   $('.btn').toggleClass('reverse-bg-color');
 }
 
-function removeReverseBgColor () {
-  if($('#mba').hasClass('reverse-bg-color')) {
-          $('#mba').removeClass('reverse-bg-color');
-        }
-  if($('.btn').removeClass('reverse-bg-color')) {
-      $('.btn').removeClass('reverse-bg-color');
-    }
-}
 
 
 
